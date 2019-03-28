@@ -8,45 +8,45 @@
   </head>
   <body>
     <div class="container">
-      <div class="jumbotron">
+      <div class="jumbotron white">
         <div class="jumbotron title">
           <h1>Pig Dice</h1>
-          <p>Role the dice. If you hit 1, your turn is over. Keep rolling or pass to take your current score. The first player to 100 wins.</p>
+          <p>Roll the dice. If you hit 1, your turn is over. Keep rolling or pass to take your current score. The first player to 100 wins.</p>
         </div>
-        <div class="row">
+        <div class="row tall">
           <div class="col-md-3">
-            <h3>Player 1</h3>
-            <button type="button" name="button" class="btn btn-info" id="p1Roll">Roll</button>
-            <button type="button" name="button" class="btn-info btn" id="p1Pass">Pass</button>
+            <h3 class="center">Player 1</h3><br><br>
+            <p class="center"><button type="button" name="button" class="btn btn-info" id="p1Roll">Roll</button></p>
+            <p class="center"><button type="button" name="button" class="btn-info btn" id="p1Pass">Pass</button></p>
           </div>
           <div class="col-md-2">
-            <h4>Current Roll</h4><br><br>
+            <h4 class="center">Current Roll</h4><br><br>
             <span id="p1Dice"></span>
           </div>
           <div class="col-md-2">
-            <h4>Round Score</h4><br><br>
+            <h4 class="center">Round Score</h4><br><br>
             <span id="roundScore"></span>
           </div>
           <div class="col-md-2">
-            <h4>Current Roll</h4><br><br>
+            <h4 class="center">Current Roll</h4><br><br>
             <span id="p2Dice"></span>
           </div>
           <div class="col-md-3">
-            <h3>Player 2</h3>
-            <button type="button" name="button" class="btn-info btn" id="p2Roll" disabled>Roll</button>
-            <button type="button" name="button" class="btn-info btn" id="p2Pass" disabled>Pass</button>
+            <h3 class="center">Player 2</h3><br><br>
+            <p class="center"><button type="button" name="button" class="btn-info btn" id="p2Roll" disabled>Roll</button></p>
+            <p class="center"><button type="button" name="button" class="btn-info btn" id="p2Pass" disabled>Pass</button></p>
           </div>
         </div>
         <div class="row">
           <div class="col-md-3">
-            <h3>Score</h3>
-            <span id="p1Score"></span>
+            <h3 class="center">Score</h3>
+            <span class="center" id="p1Score"></span>
           </div>
           <div class="col-md-6">
           </div>
           <div class="col-md-3">
-            <h3>Score</h3>
-            <span id="p2Score"></span>
+            <h3 class="center">Score</h3>
+            <span class="center" id="p2Score"></span>
           </div>
         </div>
       </div>

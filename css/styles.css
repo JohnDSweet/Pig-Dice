@@ -1,6 +1,10 @@
 .title {
-  background-color: coral;
+  background-color: #b82d17;
     color: white;
+}
+
+.white {
+  background-color: white;
 }
 
 .btn-light {
@@ -11,6 +15,49 @@
 .disabled {
   opacity: 0.6;
   cursor: not-allowed;
+}
+
+.hide {
+  display: none;
+}
+
+.tall {
+  height: 250px;
+}
+
+.row {
+  height: 225px;
+}
+
+.btn-info {
+  width: 50%;
+}
+
+#roundScore {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  font-weight: bold;
+
+}
+
+#p1Score {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  font-weight: bold;
+
+}
+#p2Score {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  font-weight: bold;
+
+}
+
+.center {
+  text-align: center;
 }
 
 /* h3 {

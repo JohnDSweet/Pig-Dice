@@ -6,23 +6,22 @@ $(document).ready(function() {
     var roundScore = 0;
     var currentRoll = 1;
 
-    //p1 buttons
+    //p1 buttons -------------------------------------------
     $("#p1Roll").click(function() {
       currentRoll = Math.floor(Math.random() * 6) + 1;
       console.log(currentRoll);
-      $("#p1Dice").empty().append(currentRoll);
+      $("#p1Dice").fadeOut(300).removeClass("hide");
+      setTimeout(function(){
+      $("#p1Dice").empty().append('<img src="img/die_face_' + currentRoll + '.png">').fadeIn(300);
+      }, 300);
       roundScore += currentRoll;
       console.log("score", roundScore);
-      $("#roundScore").empty().append(roundScore);
+      setTimeout(function(){
+      $("#roundScore").empty().append(roundScore).fadeIn(300);
+      }, 300);
       if (currentRoll === 1) {
-        $("#p1Dice").empty();
         roundScore = 0;
-        $("#roundScore").empty();
-        //console.log("roundscore", roundScore);
-        // $("#p1Roll").addClass("disabled");
-        // $("#p1Pass").addClass("disabled");
-        // $("#p2Roll").removeClass("disabled");
-        // $("#p2Pass").removeClass("disabled");
+        $("#roundScore").empty().fadeOut(300);
         $("#p1Roll").prop("disabled", true);
         $("#p1Pass").prop("disabled", true);
         $("#p2Roll").prop("disabled", false);
@@ -30,11 +29,6 @@ $(document).ready(function() {
       }
     });
     $("#p1Pass").click(function() {
-      $("#p1Dice").empty();
-      // $("#p1Roll").addClass("disabled");
-      // $("#p1Pass").addClass("disabled");
-      // $("#p2Roll").removeClass("disabled");
-      // $("#p2Pass").removeClass("disabled");
       $("#p1Roll").prop("disabled", true);
       $("#p1Pass").prop("disabled", true);
       $("#p2Roll").prop("disabled", false);
@@ -49,23 +43,23 @@ $(document).ready(function() {
       }
     });
 
-    //p2 buttons
+    //p2 buttons -------------------------------------------
     $("#p2Roll").click(function() {
       currentRoll = Math.floor(Math.random() * 6) + 1;
+      $("#p2Dice").fadeOut(300).removeClass("hide");
+      setTimeout(function(){
+      $("#p2Dice").empty().append('<img src="img/die_face_' + currentRoll + '.png">').fadeIn(300);
+    }, 300);
       console.log(currentRoll);
-      $("#p2Dice").empty().append(currentRoll);
       roundScore += currentRoll;
       console.log("score", roundScore);
-      $("#roundScore").empty().append(roundScore);
+      setTimeout(function(){
+      $("#roundScore").empty().append(roundScore).fadeIn(300);
+      }, 300);
       if (currentRoll === 1) {
-        $("#p2Dice").empty();
+        // $("#p2Dice").empty();
         roundScore = 0;
-        $("#roundScore").empty();
-        //console.log("roundscore", roundScore);
-        // $("#p2Roll").addClass("disabled");
-        // $("#p2Pass").addClass("disabled");
-        // $("#p1Roll").removeClass("disabled");
-        // $("#p1Pass").removeClass("disabled");
+        $("#roundScore").empty().fadeOut(300);
         $("#p2Roll").prop("disabled", true);
         $("#p2Pass").prop("disabled", true);
         $("#p1Roll").prop("disabled", false);
@@ -73,11 +67,6 @@ $(document).ready(function() {
       }
     });
     $("#p2Pass").click(function() {
-      $("#p2Dice").empty();
-      // $("#p2Roll").addClass("disabled");
-      // $("#p2Pass").addClass("disabled");
-      // $("#p1Roll").removeClass("disabled");
-      // $("#p1Pass").removeClass("disabled");
       $("#p2Roll").prop("disabled", true);
       $("#p2Pass").prop("disabled", true);
       $("#p1Roll").prop("disabled", false);
@@ -87,6 +76,9 @@ $(document).ready(function() {
       roundScore = 0;
       $("#roundScore").empty();
       $("#p2Score").empty().append(p2Score);
+      if (p2Score >= 100) {
+        $("#roundScore").empty().append("<h2>Player 2 WINS!</h2>");
+      }
     });
 
 

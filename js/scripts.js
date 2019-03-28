@@ -39,7 +39,7 @@ $(document).ready(function() {
       $("#roundScore").empty();
       $("#p1Score").empty().append(p1Score);
       if (p1Score >= 100) {
-        $("#roundScore").empty().append("<h2>Player 1 WINS!</h2>");
+        $("#roundScore").empty().append("<h2 class=\"center\">Player 1 WINS!</h2>");
       }
     });
 
@@ -77,7 +77,7 @@ $(document).ready(function() {
       $("#roundScore").empty();
       $("#p2Score").empty().append(p2Score);
       if (p2Score >= 100) {
-        $("#roundScore").empty().append("<h2>Player 2 WINS!</h2>");
+        $("#roundScore").empty().append("<h2 class=\"center\">Player 2 WINS!</h2>");
       }
     });
 

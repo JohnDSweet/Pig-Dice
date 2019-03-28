@@ -1,10 +1,15 @@
 # Pig Dice
 
 
-#### By **Jen Bruce** and **John Sweet**
+### By **Jen Bruce** and **John Sweet**
 
 ## Description
+Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold":
 
+If the player rolls a 1, they score nothing and it becomes the next player's turn.
+If the player rolls any other number, it is added to their turn total and the player's turn continues.
+If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.
+The first player to score 100 or more points wins.
 
 ## Setup/Installation Requirements
 
@@ -15,21 +20,23 @@
 
 ## Steps
 
-* _Set up turns using even and odd and a modulo_
+* _Alternating turns when player hits 1 by disabling button functions_
 * _Click a button to create a random number from 1-6_
-* _If number is 1, then set their current score to zero, Return the loop and increment to change turns._
-* _If not 1, then add the number to the current player's score variable._
+* _If number is 1, set their current score to zero and change turns._
+* _If not 1, add the number to the current player's score variable._
 * _They can roll again._
-* _If they click Pass, then increase their score, Return the function and change turns._
+* _If they click Pass, the score increases and turn alternates._
 * _When either score equals 100, the game is over._
 
+## GitHub Repository
+_[Jen Bruce's repository](https://github.com/ampersnad/pig-dice)_
 
-## Contact details
+_[John Sweet's repository](https://github.com/JohnDSweet/Pig-Dice)_
 
-_To offer feedback or ask questions about the items found herein, you can reach me at Epicodus in downtown PDX on Monday and Wednesday evenings. Instructors may also reach me via email._
+## GitHub Pages
+_[Jen Bruce's Published Site](https://ampersnad.github.io/pig-dice/)_
 
-## Technologies Used
-
+_[John Sweet's Published Site](https://johndsweet.github.io/Pig-Dice/)_
 
 ### License
 

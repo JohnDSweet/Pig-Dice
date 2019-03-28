@@ -1,6 +1,17 @@
+body {
+  font-family: 'BioRhyme Expanded', serif;
+}
+
 .title {
   background-color: #b82d17;
     color: white;
+}
+
+.jumbotron .header {
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  
+
 }
 
 .white {
@@ -38,6 +49,7 @@
   justify-content: center;
   font-size: 50px;
   font-weight: bold;
+  font-family: 'BioRhyme Expanded', serif;
 
 }
 
@@ -46,6 +58,7 @@
   justify-content: center;
   font-size: 50px;
   font-weight: bold;
+  font-family: 'BioRhyme Expanded', serif;
 
 }
 #p2Score {
@@ -53,6 +66,7 @@
   justify-content: center;
   font-size: 50px;
   font-weight: bold;
+  font-family: 'BioRhyme Expanded', serif;
 
 }
 
